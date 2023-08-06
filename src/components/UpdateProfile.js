@@ -21,7 +21,7 @@ const UpdateProfile = () => {
     const promises = []
     setLoading(true)
     setError('')
-    if(emailRef.current.value != currntUser.email){
+    if(emailRef.current.value !== currntUser.email){
       promises.push(updateUserEmail(emailRef.current.value))
     }
     if(passwordRef.current.value){
